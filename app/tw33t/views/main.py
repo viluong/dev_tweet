@@ -12,3 +12,8 @@ def index():
     return render_template('index.html')
 
 
+'''
+
+Introduce a "Get tweets" route for the client and log relevant from each search into a file.
+
+'''
