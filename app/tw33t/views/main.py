@@ -14,6 +14,6 @@ def index():
 
 '''
 
-Introduce a "Get tweets" route for the client and log relevant from each search into a file.
+Introduce a "Get tweets" route for the client and log relevant info from each search into a file.
 
 '''
