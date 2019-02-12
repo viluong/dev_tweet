@@ -2,7 +2,7 @@
 
 Nice to meet you! We use this test at CubiCasa to evaluate all full-stack developer applicants before interviews. We hope you'll have fun with this assignment.
 
-Your task is to build a simple web app that communicates with Twitter API and logs info about each search.
+Your task is to build a simple Flask + Vue app that communicates with Twitter API and logs info about each search.
 
 ## How to complete the task
 
@@ -10,7 +10,7 @@ Your task is to build a simple web app that communicates with Twitter API and lo
 2. Clone this repo to your local machine
 3. Get Twitter API keys
 4. Publish your code under your own Github account
-5. Send us an email that you've completed the task at openpositions@cubicasa.com
+5. Send us an email that you've completed the task at openpositions@cubicasa.com and give a link to your repo
 
 ## Requirements for the app
 
