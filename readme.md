@@ -23,7 +23,6 @@ docker-compose up
 5. Go to http://localhost:8080/
 ![img.png](img.png)
 
-
 ## Note
-Front-end source: ./app/tw33t/templates/tweet_portal/
-Log relevant information about each search to a file: ./app/record.log
+- Front-end source: ./app/tw33t/templates/tweet_portal/
+- Log relevant information about each search to a file: ./app/record.log
