@@ -5,8 +5,8 @@ from flask import jsonify
 from flask import request
 
 
-TWEET_POINT = 'https://api.twitter.com/2/'
-BEARER_TOKEN ='cFZvMlBZamNjTm45QzViVEZ0RnJmRkI5Z1pqUU9MSEh0SENldkc5MzhYYWgwOjE2NTEwMjk2MTg1NDg6MToxOmF0OjE'
+TWEET_POINT = os.getenv('TWEET_POINT')
+BEARER_TOKEN = os.getenv('BEARER_TOKEN')
 headers = {'Authorization': 'Bearer ' + BEARER_TOKEN}
 
 

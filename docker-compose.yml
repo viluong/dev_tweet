@@ -3,15 +3,27 @@ services:
   web:
     container_name: tw33t
     image: cubicasa-developer-test
+    env_file:
+      ./.env
     build: .
     volumes:
       - ./app:/app
     ports:
       - "8000:8000"
-    environment:
-      - FLASK_APP=application.py
-      - FLASK_DEBUG=1
-      - 'RUN=flask run --port 8000 --host 0.0.0.0'
     command: flask run --port 8000 --host 0.0.0.0
     # Infinite loop, to keep it alive, for debugging
     # command: bash -c "while true; do echo 'sleeping...' && sleep 10; done"
+  frontend:
+    container_name: tw33t_frontend
+    image: front-end-tweet
+    env_file:
+      ./.env
+    build:
+      context: ./app/tw33t/templates/tweet_portal
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./app/tw33t/templates/tweet_portal:/usr/app/tweet_portal
+      - /usr/app/tweet_portal/node_modules
+      - /usr/app/tweet_portal/dist
